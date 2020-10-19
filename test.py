@@ -1,9 +1,21 @@
 import csv
+import pandas as pd
+import time
 
-with open("tags_20201012.csv", encoding='utf-8-sig') as file:
-        reader = csv.reader(file)
-        # Loops through tag file
-        for tag in reader:
-            # Revomes brackets and quotations
-            tag = "".join(tag)
-            print(tag)
+
+# with open("taggar.csv", encoding='utf-8-sig') as file:
+        # # Loops through tag file
+    # for tag in reader:
+tag = input("Input tag: ")
+
+tags = []
+df = pd.read_csv('taggar.csv')
+
+# print(df)
+if tag in df:
+    # [Rad, Col]
+    # print(df.iloc[tag])
+    # print(df.columns)
+    print("pog")
+else:
+    print("ERROR")
