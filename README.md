@@ -4,7 +4,7 @@
 
 - *Python 3.8.5*
 
-## Development Enviroment Standard
+## Development Environment Standard
 
 **Visual Studio Code-plugins:**
 - *Live Share*
