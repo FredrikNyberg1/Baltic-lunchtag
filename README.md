@@ -15,7 +15,7 @@
 
 **File name structure:** this_is_how_you_do (snake_case)
 
-**Variables/Classes/functions**: thisIsHowYouDo (camelCaseExample)
+**Variables/Classes/Functions**: thisIsHowYouDo (camelCaseExample)
 
 
 ## Definition of Done
