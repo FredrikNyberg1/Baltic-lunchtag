@@ -2,20 +2,29 @@ import csv
 import pandas as pd
 import time
 
-
-# with open("taggar.csv", encoding='utf-8-sig') as file:
-        # # Loops through tag file
-    # for tag in reader:
-tag = input("Input tag: ")
-
-tags = []
 df = pd.read_csv('taggar.csv')
 
-# print(df)
-if tag in df:
-    # [Rad, Col]
-    # print(df.iloc[tag])
-    # print(df.columns)
-    print("pog")
-else:
-    print("ERROR")
+tag = int(input("Input tag: "))
+
+i = 0
+
+klasser = df.columns
+
+tags = []
+
+
+for klass in klasser:
+    # print(klasser[i])
+    klass_tags = df[klasser[i]].to_list()
+    # print(klass_tags)
+    tags.extend(klass_tags)
+    # print(tags)
+    i += 1
+
+if (tag in tags):
+    print("POG")
+    if (tag in klass_lunch):
+        print("Du får äta")
+    else: 
+        print("X")
+

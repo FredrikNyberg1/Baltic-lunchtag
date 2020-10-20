@@ -1,7 +1,14 @@
-tag = int(input("Waiting for input..."))
+list1 = [1, 2]
 
-if compare to databse or smth
+list2 = [3, 4]
 
-print(tag)
+xd = 3
 
-pipe to soem display info
+list1.append(list2)
+
+print(list1)
+
+if (xd in list2):
+    print("pog")
+else:
+    print("cringe")
