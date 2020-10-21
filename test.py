@@ -1,6 +1,7 @@
 import csv
 import pandas as pd
 import tkinter as tk
+from keyboard import press
 
 df = pd.read_csv('taggar.csv')
 
@@ -29,15 +30,14 @@ while True:
         #print(tags)
         i += 1
 
-    app.configure(bg='black')
 
     if (tag in tags):
         print("Ja")
-
         app.configure(bg='green')
         
     else: 
         print("Nej")
         app.configure(bg='red')
+
 
 app.mainloop()
